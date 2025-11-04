@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
 // https://newadmin.gamedemo.tech/api
-const API_BASE_URL = "http://localhost:3000/api/auth";
+const API_BASE_URL = "https://future-trade.onrender.com/api/auth";
 const api = axios.create({
   baseURL: API_BASE_URL,
   timeout: 30000
