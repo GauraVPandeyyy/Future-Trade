@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+/* Keyframes for continuous left scroll */
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Track utility: two copies occupy ~200% width; move left by 50% to loop */
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    /* Duplicate content side-by-side by placing two spans in JSX */
+    animation: marquee-left 18s linear infinite;
+}
+
+/* Pause on hover for UX */
+.marquee-track:hover {
+    animation-play-state: paused;
+}
