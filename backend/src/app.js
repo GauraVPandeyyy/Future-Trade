@@ -6,7 +6,7 @@ const app = express();
 
 // Enable CORS
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with your frontend URL
+  origin: 'https://future-trade-eight.vercel.app/', // Replace with your frontend URL
   credentials: true // This allows cookies to be sent with requests
 }));
 
