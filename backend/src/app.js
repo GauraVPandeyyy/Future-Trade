@@ -15,6 +15,6 @@ app.use(express.json());
 
 app.use(cookieParser());
 app.use('/api/auth', authRouters);
-app.use('/api/post', postsRouters);
+
 
 module.exports = app;
